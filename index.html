@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/185d00ae67.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="Logo Jesús" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#about">Acerca</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hola, soy <br><span>Jesús Aguirre</span></h1>
+            </div>
+        </div>
+    </div>
+    <!---------- Acerca de mí  ---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="user-hidden" src="images/user.png" alt="A profile picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" >Acerca de mí</h1>
+                    <p>Soy un mercadólogo con más de siete años de experiencia en el desarrollo de marcas, imagen corporativa y estrategia comercial. Actualmente me estoy formando en Oracle Next Education por Alura Latam como Frontend Developer.Busco oportunidades para ganar experiencia en desarrollo frontend, donde pueda aplicar y expandir mis habilidades técnicas en tecnologías web, contribuyendo al crecimiento de la empresa y fortaleciendo mis conocimientos.</p>
+
+                    <div class="tab-titles centrado">
+                        <p class="tab-links active-link" onclick="opentab('Habilidades')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('Experiencia')">Experiencia</p>
+                        <p class="tab-links" onclick="opentab('Educación')">Educación</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Habilidades">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desarrollando interfaces web/app usando Figma</li>
+                            <li><span>Desarrollo Web</span><br>Frontend con enfásis en escabilidad</li>
+                            <li><span>Html, Css y JavaScript</span><br>Aplicando Lógica en proyectos de vanguardia</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experiencia">
+                        <ul>
+                            <li><span>2024 - Actualidad</span><br>Formación como Frontend Developer</li>
+                            <li><span>2020 - 2024</span><br>Consultor de Marketing en Arteone </li>
+                            <li><span>2012 - 2024</span><br>Analista de Branding y Diseñador</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Educación">
+                        <ul>
+                            <li><span>2024</span><br>Oracle Next Education</li>
+                            <li><span>2023</span><br>Curso CS50</li>
+                            <li><span>2009 - 2012</span><br>Licenciatura en Marketing</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- ---------Servicios---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title" >Servicios</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Diseño y desarrollo de interfaces de usuario</h2><br>
+                <p>Creación de interfaces atractivas y funcionales que aseguren una experiencia de usuario fluida, usando herramientas como HTML, CSS, y frameworks de diseño.</p>
+                <a href="#">Saber más</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Desarrollo de aplicaciones web interactivas</h2><br>
+                <p>Programación de aplicaciones web dinámicas y responsivas con JavaScript y React.</p>
+                <a href="#">Saber más</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-link"></i>
+                <h2>Integración de APIs y servicios externos</h2><br>
+                <p>Conexión e integración con APIs RESTful y otros servicios externos para enriquecer la funcionalidad de la web (Mulesoft), como datos en tiempo real y características interactivas.</p>
+                <a href="#">Saber más</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------Portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title" >Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/images/work-1.png" alt="Proyecto encriptador">
+                <div class="layer">
+                    <h3>Encriptador Alura</h3>
+                    <p> Un encriptador/desencriptador para el programa Oracle de Alura Latam.<br> Html, Css y Javascript</p>
+                    <a href="https://github.com/JesusEAguirre/Encriptador-Alura-Challenge"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div> <div class="work">
+                <img src="/images/work-2.png" alt="Proyecto inmobiliaria">
+                <div class="layer">
+                    <h3>Inmobiliaria NovaCity</h3>
+                    <p> Diseño y desarrollo web de una página presentación para un gestor inmobiliario.<br> Figma, Html, Css y Javascript</p>
+                    <a href="https://github.com/JesusEAguirre"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div> <div class="work">
+                <img src="/images/work-3.png" alt="Proyecto número secreto juego">
+                <div class="layer">
+                    <h3>Número Secreto Alura</h3>
+                    <p> Desarrollo del juego "Número Secreto" Alura Project.<br> Html, Css y Javascript</p>
+                    <a href="https://github.com/JesusEAguirre/juego-secreto"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/JesusEAguirre" class="btn">Ver más</a>
+    </div>
+</div>
+<!-- --------Contacto---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contacto</h1>
+                <p><i class="fa-solid fa-envelope"></i>Je_aguirrec@hotmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>Cel.2871428596</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/Nicolasflamelhere"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.linkedin.com/in/jesusemac/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/JesusEAguirre"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="/images/Jesús Cv 2024.pdf" class="btn btn2">Currículum</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Tu Nombre" required>
+                    <input type="email" name="Email" placeholder="Tu Correo" required>
+                    <textarea name="Message" rows="6" placeholder="Tu mensaje" ></textarea>
+                    <button type="submit" class="btn3">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------Derechos reservados------- -->
+<div class="copyright">
+    <p><i class="fa-solid fa-copyright"></i> 2024 Jesús E. Aguirre.<br><i class="fa-solid fa-square-check"></i> Todos los derechos reservados.</p>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
